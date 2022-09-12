@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+
+
+        <div class="logo">
+            <img src="imagens/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+
+
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#port">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+       
+    </header>
+
+
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/rodrigo-santos-de-melo-malta-de-oliveira-16409424a" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/Rflup" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>creative</h1>
+                <h2>developer</h2>
+                <h3>full stack developer</h3>
+            </div>
+        </div>
+    </main>
+
+
+    <section id="sobre">
+        <div class="container">
+            <div class="title">
+                <h1>Eu sou um futuro full stack web developer</h1>
+                <p>Atualmente me tornando um desenvolvedor web full stack pelo Senac. <br> Oque eu aprendi até agora inclui:</p>
+                <div class="box-title">
+                    <p>80%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>70%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>css</span>
+
+                    <p>20%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="port">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="imagens/img_1.png" alt="">
+                    <h1>Dilema</h1>
+                    <p>Nunca prometa oque não vai cumprir e jamais se arrependa de suas escolhas.</p>
+               </label>
+
+               <label class="card" for="item-2" id="song-2">
+                <img src="imagens/img_2.png" alt="">
+                <h1>Eu</h1>
+                <p>Sou uma pessoa que gosta de trabalhar em equipe, gosto de superar os desafios e quando me passam um trabalho me esforço ao maximo para que ele seja bem feito</p>
+           </label>
+
+           <label class="card" for="item-3" id="song-3">
+            <img src="imagens/img_3.png" alt="">
+            <h1>Cursos</h1>
+            <p>Inglês avançado.<br> Desenvolvedor web full stack.</p>
+       </label>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-contact">
+                <div class="contact-left">
+                <h1>Contatos</h1>
+                <div class="linha"></div>
+                <ion-icon name="logo-discord"></ion-icon>
+                <span> Rflup#5399</span>
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>rodrigomelo.malta@gmail.com</span>
+                <ion-icon name="call-outline"></ion-icon>
+                <span>(+55)21 98056-2003</span>
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Rio de Janeiro,Brasil</span>
+                </div>
+
+
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/rodrigomelo.malta@gmail.com" method="POST">
+                    
+                    <h1>Preencha o formulario</h1>
+                    
+                    <div class="linha"></div>
+                    
+                    <input type="email" placeholder="E-mail" required>
+                    
+                    <input type="text" placeholder="Nome" required>
+                    
+                    <textarea placeholder="Mensagem" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                    
+                </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
